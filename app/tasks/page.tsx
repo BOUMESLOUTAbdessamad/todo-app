@@ -81,6 +81,8 @@ function TasksView() {
                   onChange={() => updateStatus(data?.id)}
                   className="text-md"
                   defaultSelected={data?.status}
+                  color="success"
+                  radius="full"
                 >
                   {data?.task}
                 </Checkbox>
@@ -112,6 +114,9 @@ function TasksView() {
                   onChange={() => updateStatus(data?.id)}
                   className="text-md"
                   defaultSelected={data?.status}
+                  lineThrough
+                  color="success"
+                  radius="full"
                 >
                   {data?.task}
                 </Checkbox>
